@@ -19,7 +19,7 @@ module "API_REST" {
   GET_METHOD  = var.GET_METHOD
   POST_METHOD = var.POST_METHOD
   uri         = module.lambda.invoke_arn
-  depends_on = [ module.lambda.invoke_arn ]
+  depends_on  = [ module.lambda.invoke_arn ]
 }
 
 
