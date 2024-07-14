@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: hashicorp/tfc-workflows-github/actions/create-run@v1.0.0
+      
         id: plan-run
         with:
           workspace: ${{ env.TF_WORKSPACE }}
